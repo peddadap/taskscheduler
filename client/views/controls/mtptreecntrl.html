@@ -1,0 +1,24 @@
+<template name="sideTreeTemplate">
+    <div id="tree" style="height: 200px">
+        <h2 class="panel">My Data</h2>
+        <ul id="treeData" style="display: none;">
+          {{#each treeItems }}
+            {{> treeNodeTemplate}}
+          {{/each }}
+        </ul>
+    </div>
+</template>
+
+
+<template name="treeNodeTemplate" >
+    <li id="{{id}}" title="{{name}}" class="{{type}}">
+      {{name}}
+      {{#if hasChildren}}
+          <ul>
+            {{#each children}}
+              {{> treeNodeTemplate}}
+            {{/each}}
+          </ul>
+      {{/if}}
+    </li>
+</template>

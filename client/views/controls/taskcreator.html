@@ -1,0 +1,30 @@
+<template name="taskcreatortemplate">
+    <div id="taskcreator_here" style='...'>
+       <!-- <div id="todaysdatediv" class="todaysdate">
+        </div> -->
+	<!--	<div class="task_status"><span class="task_txt">1 TASK</span><span class="task_mtng_txt">0 MEETINGS</span></div> -->
+        <div>
+            <label id="groupname">General</label>
+			<input id="tasktextbox" class="task_box" size="100px" hidden="true">
+            <p id="tasktextpara" class="add_task_btn">+ Add a task or meeting</p>
+        </div>
+	</div>
+</template>
+
+<template name = "grouptasks">
+
+    <div id="draggable" class="task_item">
+        <div class="task_area_one">
+            <span class="taskcheckicon"><i class="fa fa-check"></i></span>
+            <span class="taskdayalbel">Day</span>
+            <span class="tasktxtlabel"><label id="tasktextlabel">&nbsp;</label></span>
+            <span class="tackclndricon"><i class="fa fa-calendar"></i></span>
+        </div>
+        <!--<div class="task_area_two">
+			<span><textarea class="tasktxtarea" rows="4" cols="50"></textarea></span>
+		</div>
+		<div class="task_area_three">
+			<span class="tasktxtdelicon"><span class="tasktxttrash-icon"><i class="fa fa-trash"></i></span><span class="tasktxtarrow-icon"><i class="fa fa-arrows-alt"></i></span></span>
+		</div>-->
+    </div>
+</template>

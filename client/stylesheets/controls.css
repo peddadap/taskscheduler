@@ -1,0 +1,97 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css');
+body,html { height:100%;}
+body { font-family: 'Segoe UI',Open Sans, sans-serif; background:#f5f7fa; color:gray;}
+
+.header { margin:auto; height:50px; background:#93b9f4;}
+
+.left_col_list li { width:100%; list-style-type:none; font-size:15px; padding:10px 0px!important; border-radius:0px!important; }
+.k-tabstrip-items .k-item.k-state-active { background:#354452; border:none;}
+.k-tabstrip-items .k-state-active .k-link { color:#91b7f1!important;}
+.k-tabstrip-items .k-state-default .k-link, .k-panelbar>li.k-state-default>.k-link { color:#fff;}
+.k-tabstrip-items .k-item.k-state-hover {  background:#354452; border-color:#354452; }
+
+.task_box { width:100%; padding:5px;}
+.task_status{margin-bottom:10px;}
+.task_txt{font-size:12px; font-weight:normal;}
+.task_mtng_txt{font-size:12px; font-weight:normal; margin-left:10px;}
+.todaysdate{font-size:26px !important;}
+.taskdayalbel{margin-left:10px; margin-right:10px;}
+.taskcheckicon,.taskdayalbel,.tasktxtlabel,.tackclndricon{width:22%; display:inline-block;}
+.tackclndricon{text-align:right;}
+.tasktxtdelicon{width:100%;text-align:right;display:inline-block;}
+.tasktxttrash-icon{margin:5px; font-size:16px;}
+.tasktxtarrow-icon{margin:5px 0px 5px 5px; font-size:13px;}
+#tabstrip_here .k-link{width:100%;}
+.tabstrip-day{width:75%; display:inline-block;}
+.tabstrip-notification{width:21%; display:inline-block;}
+.notification{background:#3b4c5c; width:20px; height:20px; border-radius:50px; text-align:center; display:inline-block; font-size:13px;}
+.tasktxtarea{width:100%; border:none;}
+.task_area_one{border-bottom:1px solid #eaeaea;}
+.task_area_two{border-bottom:1px solid #eaeaea;}
+.add_task_btn { font-size:17px; color:#91b7f1; cursor:pointer;}
+.add_list {  color: white;
+  text-align: center;
+  width: 150px;
+  display: block;
+  bottom: 0px;
+  position: fixed;
+  padding: 7px 0px;
+  box-shadow: 0 -1px 2px rgba(0,0,0,.15),inset 0 1px 0 rgba(0,0,0,.3);
+  border-bottom: 0;
+}
+a.add_list:hover { background-color: #354452; color:#fff!important;}
+.task_item { padding:10px; background:#fff;}
+.task_item label { font-weight:normal; font-size:15px; cursor:pointer;}
+/*.task_list_bullet { color:#ccc; margin-right:25x;}*/
+
+
+#tabstrip_here {
+   
+    width: 150px;
+    background-color:#425566;
+    color:white;
+    height:100%;
+	float:left;
+	position:fixed;	
+}
+
+#taskcreator_here {
+    float:left;
+    width:25%;
+    min-height:650px;
+    border: 1px black;
+	/*background:#fff;*/
+	background:#f5f7fa;
+	padding:15px;
+	margin:10px;
+	margin-left:160px;
+  	box-shadow: 0px 2px 4px 0px #ccc;
+}
+
+#tasktextlabel {
+    cursor: hand;
+}
+
+#scheduler_here {
+   	float:left;
+    width: 60%;
+    min-height:650px;
+	padding:15px;
+	margin:10px 10px 10px 0px;
+  box-shadow: 0px 2px 4px 0px #ccc;	
+
+}
+.hide
+{
+    display:none;
+    visibility:hidden;
+}
+.show
+{
+    display:inline;
+    visibility:visible;
+    width:100%;
+    background-color: ##fff;
+    color: #2a0000;
+}

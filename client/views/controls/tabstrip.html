@@ -1,0 +1,43 @@
+<template name="tabstriptemplate">
+    <div id="tabstrip_here" style='...'>
+        <ul id = "list" class="left_col_list">
+            <li class="k-state-active">
+                <span class="tabstrip-day"><i class="fa fa-sun-o"></i>DAY</span>
+				<span class="tabstrip-notification"><span class="notification">4</span></span>
+            </li>
+            <li>
+               <span class="tabstrip-day"><i class="fa fa-calendar"></i>WEEK</span>
+			   <span class="tabstrip-notification"><span class="notification">3</span></span>
+            </li>
+            <li>
+                <i class="fa fa-bars"></i> LISTS
+                {{> grpname }}
+                {{#each groups}}
+                   {{> dynalist }}
+                {{/each}}
+             	<!--<li><span class="tabstrip-day">Important</span><span class="tabstrip-notification"><span class="notification">2</span></span></li>
+				<li><span class="tabstrip-day">General</span><span class="tabstrip-notification"><span class="notification">1</span></span></li>-->
+            </li>
+        </ul>
+        <!--<a title="" id="sidebar-add-list" class="add_list" href="#"><i class="fa fa-plus fa-2x"></i></a>-->
+    </div>
+</template>
+
+<template name ="createlist">
+    <div id ="createlist_here">
+        <a title="" id="sidebar-add-list" class="add_list" href="#"><i class="fa fa-plus fa-2x"></i></a>
+    </div>
+</template>
+
+<template name = "dynalist">
+    <li><span class="tabstrip-day">{{name}}</span><span class="tabstrip-notification"><span class="notification">3</span></span></li>
+</template>
+
+<template name = "grpname">
+    <div>
+        <input type="text" id="groupname"  size = 10 class ="hide"/>
+    </div>
+ </template>
+
+
+

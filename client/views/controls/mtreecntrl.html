@@ -1,0 +1,34 @@
+<template name="mwCategories">
+    {{#each categories}}
+      <ol>
+          <h1> Found Categories</h1>
+          {{> mwCategories_tasks}}
+      </ol>
+  {{/each}}
+ </template>
+
+<template name="mwCategories_tasks">
+  {{#each activity}}
+      {{#each tasks}}
+      <li><span class="catOpen">[<b>{{#if hasSubTasks}}+{{else}}-{{/if}}</b>]</span>
+          <a class="internal-link" data-link="read" data-name="{{name}}"
+             href="/read/{{name}}">{{ name}}</a>
+            {{#if hasChildren}}
+                <ol>
+                 {{> mwCategories_tasks}}
+                 {{> mwCategories_pages}}
+                </ol>
+            {{else}}
+                <br />No pages or subcategories
+            {{/if}}
+      </li>
+      {{/each}}
+  {{/each}}
+</template>
+
+<template name="mwCategories_pages">
+  {{#each pages}}
+      <li><a class="internal-link" data-link="read" data-name="{{name}}"
+             href="/read/{{name}}">{{ name}}</a></li>
+  {{/each}}
+</template>
