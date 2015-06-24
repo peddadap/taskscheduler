@@ -11,4 +11,5 @@ dhtmlx:scheduler
 telerik:kendo-ui-core-bootstrap-theme
 twbs:bootstrap
 mrt:isolate-value
-loredanacirstea:jqtree
+linto:jquery-ui
+jquery
