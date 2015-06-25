@@ -3,10 +3,11 @@
        <!-- <div id="todaysdatediv" class="todaysdate">
         </div> -->
 	<!--	<div class="task_status"><span class="task_txt">1 TASK</span><span class="task_mtng_txt">0 MEETINGS</span></div> -->
-        <div>
+        <div style="height: 600px; overflow: auto;">
             <label id="groupname">General</label>
-			<input id="tasktextbox" class="task_box" size="100px" hidden="true">
-            <p id="tasktextpara" class="add_task_btn">+ Add a task or meeting</p>
+			<!--<input id="tasktextbox" class="task_box" size="100px" hidden="true">
+            <p id="tasktextpara" class="add_task_btn">+ Add a task or meeting</p> -->
+            {{> treeCntrl }}
         </div>
 	</div>
 </template>

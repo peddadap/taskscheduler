@@ -13,3 +13,4 @@ twbs:bootstrap
 mrt:isolate-value
 linto:jquery-ui
 jquery
+mrt:jquery-ui-bootstrap

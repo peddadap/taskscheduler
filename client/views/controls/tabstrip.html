@@ -11,13 +11,16 @@
             </li>
             <li>
                 <i class="fa fa-bars"></i> LISTS
-                {{> grpname }}
-                {{#each groups}}
-                   {{> dynalist }}
-                {{/each}}
-             	<!--<li><span class="tabstrip-day">Important</span><span class="tabstrip-notification"><span class="notification">2</span></span></li>
-				<li><span class="tabstrip-day">General</span><span class="tabstrip-notification"><span class="notification">1</span></span></li>-->
+                <span class="tabstrip-notification"><span class="notification">3</span></span>
             </li>
+            <li>
+                {{> grpname }}
+            </li>
+            {{#each groups}}
+                {{> dynalist }}
+            {{/each}}
+            <!--<li><span class="tabstrip-day">Important</span><span class="tabstrip-notification"><span class="notification">2</span></span></li>
+				<li><span class="tabstrip-day">General</span><span class="tabstrip-notification"><span class="notification">1</span></span></li>-->
         </ul>
         <!--<a title="" id="sidebar-add-list" class="add_list" href="#"><i class="fa fa-plus fa-2x"></i></a>-->
     </div>
